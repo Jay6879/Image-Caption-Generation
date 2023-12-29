@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ImageCaption Generator</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><span>Image</span>Caption</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#Generate">Generate</a></li>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url(static/img/hero-carousel/1.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Generate Captions for Complex Images </h2>
+                <p class="animate__animated animate__fadeInUp">Bring images to life with descriptive captions powered by advanced CNN and LSTM technology</p>
+                <a href="/Prediction" class="btn-get-started scrollto animate__animated animate__fadeInUp">Predict</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/img/hero-carousel/2.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">With computer vision you can get detailed updates from image feeds and simplifies the processing of bulk images.</h2>
+                <p class="animate__animated animate__fadeInUp">Use CNN + LSTM to quickly and accurately provide a text-based description that describes the selected image.</p>
+                <a href="/Prediction" class="btn-get-started scrollto animate__animated animate__fadeInUp">Predict</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/img/hero-carousel/3.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Generate Quality Image Captions</h2>
+                <p class="animate__animated animate__fadeInUp">Generates human readable high accuracy captions from any image clearly explaining what is happening in the image - perfect for accessibility.</p>
+                <a href="/Prediction" class="btn-get-started scrollto animate__animated animate__fadeInUp">Predict</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="about-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>About ImageCaption</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- single-well start-->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="well-left">
+              <div class="single-well">
+                <a href="#">
+                  <img src="static/img/about/1.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          
+          <!-- single-well end-->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">project Maintenance</h4>
+                </a>
+                <p>
+                  Image caption generation is a task in computer vision and natural language processing where the goal is to generate a textual description (caption) for an input image. A compelling application of deep learning, involves the development of models capable of providing descriptive and meaningful textual descriptions for input images where the CNN-LSTM combination is a state-of-the-art deep learning model that uses neural networks' power to enable automated picture captioning.
+                </p>
+                <ul>
+                  <li>
+                    <i class="bi bi-check"></i> Nuanced Descriptions
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> Image Insights
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> Vivid Synthesis
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> Intelligent Narratives
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> Precise Storytelling
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+          <!-- End col-->
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Rviews Section ======= -->
+    <div class="reviews-area">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <img src="static/img/about/2.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6 work-right-text d-flex align-items-center">
+          <div class="px-5 py-5 py-lg-0">
+            <h2>Generate Caption</h2>
+            <h5>Click here to Upload the Image</h5>
+            <!--<a href="/Prediction" style="color: rgb(95, 246, 7);" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a>-->
+            <a href="/Prediction" class="btn btn-success"><i class="bi bi-arrow-right"></i>Predict</a>
+
+          </div>
+          <!-- <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item  position-relative">
+               <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <div class="row">
+                <section id="services" class="services sections-bg">
+                  <div class="container" data-aos="fade-up">
+              <p style="color: white;">Predict the Caption for an Image</p>
+                <a href="/Prediction" class="readmore stretched-link"><i class="bi bi-arrow-right"></i></a> -->
+              <div>
+            <div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Rviews Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper">
+          <div class="swiper-wrapper">
+              <div class="testimonial-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>Image</span>Caption</h2>
+                </div>
+
+                <p>Generates human readable high quality captions from any image clearly explaining what is happening in the image - perfect for accessibility.</p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Information</h4>
+                <p>
+                  Reach us out at :
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Tel:</span>+91 8916262017</p>
+                  <p><span>Email:</span>vitapstudent@2025.com</p>
+                  <p><span>Working Hours:</span> 9am-5pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <div class="footer-head">
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+            
+              <p>
+                &copy; Copyright <strong>ImageCaption</strong>. All Rights Reserved
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+
+</body>
+
+</html>
